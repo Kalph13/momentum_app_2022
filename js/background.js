@@ -1,7 +1,7 @@
 const images = [
-    "background_1.jpg",
-    "background_2.jpg",
-    "background_3.jpg"
+    "Background_1.jpg",
+    "Background_2.jpg",
+    "Background_3.jpg"
 ]
 
 const background = document.createElement("img");

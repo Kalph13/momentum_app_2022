@@ -4,9 +4,9 @@ const images = [
     "background_3.jpg"
 ]
 
-const showImage = () => {
-    const chosenImage = images[Math.floor(Math.random() * images.length)];
-    document.body.style.background = `url('img/${chosenImage})`;
-}
+const background = document.createElement("img");
+const chosenImage = images[Math.floor(Math.random() * images.length)];
 
-window.onload = () => showImage();
+background.id = "background";
+background.src = `./img/${chosenImage}`;
+document.body.appendChild(background);
